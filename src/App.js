@@ -1,11 +1,28 @@
 import React from "react";
-import "./style.css";
+import "./styles/styles.css";
+import { Navbar } from "./styled-components.js" ;
+import styled from "styled-components";
 
-export default function App() {
+
+
+const App = () => {
   return (
-    <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
-    </div>
+    <AppWrapper>
+      <HomeWrapper>
+        <Navbar></Navbar>
+      </HomeWrapper>
+    </AppWrapper>
   );
-}
+};
+
+
+export default App ;
+
+
+const AppWrapper = styled.div``;
+
+const HomeWrapper = styled.main`
+  height: 100vh ;
+  background-color: lightblue;
+
+`
