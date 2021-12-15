@@ -5,6 +5,10 @@
   "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+<<<<<<< HEAD
+=======
+    "react-is": ">= 16.8.0",
+>>>>>>> 2f58ab706452f5f28a65e56d853b7a5b49c47ced
     "styled-components": "^5.3.3"
   },
   "scripts": {
