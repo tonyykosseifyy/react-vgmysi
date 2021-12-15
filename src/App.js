@@ -8,7 +8,9 @@ import styled from "styled-components";
 const App = () => {
   return (
     <AppWrapper>
-      <Navbar></Navbar>
+      <HomeWrapper>
+        <Navbar></Navbar>
+      </HomeWrapper>
     </AppWrapper>
   );
 }
@@ -16,3 +18,9 @@ export default App ;
 
 
 const AppWrapper = styled.div``;
+
+const HomeWrapper = styled.main`
+  height: 100vh ;
+  background-color: lightblue;
+
+`
