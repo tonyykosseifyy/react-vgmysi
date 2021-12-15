@@ -22,15 +22,15 @@
   --White: hsl(0, 0%, 100%);
 }
 
+.home {
+  /*background: url("../assets/image-header.jpg");*/
+}
+
+
 /*
-
-
 ### Font
-
 - Family: [Barlow](https://fonts.google.com/specimen/Barlow)
 - Weights: 600
 - Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
 - Weights: 700, 900
-
-
 */
