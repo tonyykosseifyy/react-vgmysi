@@ -1,25 +1,21 @@
 {
-  "name": "react",
-  "version": "0.0.0",
-  "private": true,
+  "name": "react-vgmysi",
+  "version": "1.0.0",
+  "description": "[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-vgmysi)",
+  "main": "index.js",
   "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-<<<<<<< HEAD
-=======
-    "react-is": ">= 16.8.0",
->>>>>>> 2f58ab706452f5f28a65e56d853b7a5b49c47ced
     "styled-components": "^5.3.3"
   },
+  "devDependencies": {},
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "react-scripts start"
   },
-  "devDependencies": {
-    "react-scripts": "latest"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonyykosseifyy/react-vgmysi.git"
   },
+  "author": "",
+  "license": "ISC",
   "browserslist": {
     "production": [
       ">0.2%",

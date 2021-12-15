@@ -9,17 +9,13 @@ const App = () => {
   return (
     <AppWrapper>
       <HomeWrapper>
-        <Navbar></Navbar>
+        <Navbar>asdasdasdasd</Navbar>
       </HomeWrapper>
     </AppWrapper>
   );
-<<<<<<< HEAD
 };
 
 
-=======
-}
->>>>>>> 2f58ab706452f5f28a65e56d853b7a5b49c47ced
 export default App ;
 
 
