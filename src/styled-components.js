@@ -7,8 +7,32 @@ export const Navbar = styled.nav`
   display: flex ;
   justify-content: space-between ;
   align-items: center ;
-  padding: 20px 4vw ;
+  padding: 40px 4vw ;
+	position: relative;
 `
+
+export const backgroundBar = styled.div`
+	position: absolute ;
+	background-color: #6FCFFF ;
+	border-radius: 10px ;
+	width: 100px ;
+	height: 50px ;
+	left: ${(props) => props.left} ;
+	opacity: ${(props) => props.opacity} ;
+	top: 50% ;
+	transform: translateY(-50%);
+`
+
+export const NavbarLinks = styled.div`
+	display: flex ;
+`
+export const Link = styled.a`
+	color: white;
+	margin: 0 15px;
+	cursor: pointer ;
+	position: relative;
+`
+
 
 export const Logo = () => (
   <div className='logo'>
