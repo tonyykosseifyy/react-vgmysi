@@ -4,7 +4,6 @@ import { Navbar , Logo } from "./styled-components.js" ;
 import styled from "styled-components";
 
 
-
 const App = () => {
   return (
     <AppWrapper>
