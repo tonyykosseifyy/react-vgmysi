@@ -1,6 +1,13 @@
 import styled from "styled-components";
 
-
+export const HomeTitle = styled.h1`
+  color: white;
+  font-size: 3.1rem ;
+  text-transform: uppercase ;
+  margin: 50px auto 0 auto ;
+  text-align: center;
+  font-family: 'Fraunces', serif;
+`
 
 export const NavbarMobileLinks = styled.div`
   position: absolute ;
@@ -8,7 +15,7 @@ export const NavbarMobileLinks = styled.div`
   width: 90vw ;
   margin: 0 auto ;
   background-color: white;
-  height:${props => props.open ? "237px" : "0px"}  ;
+  height: ${props => props.open ? "237px" : "0px"}  ;
   overflow: hidden ;
   transition: .3s  cubic-bezier(0.18, 0.89, 0.32, 1.28) ;
   & > a {
