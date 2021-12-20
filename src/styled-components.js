@@ -11,26 +11,32 @@ export const Navbar = styled.nav`
 	position: relative;
 `
 
-export const backgroundBar = styled.div`
+export const BackgroundBar = styled.div`
 	position: absolute ;
 	background-color: #6FCFFF ;
-	border-radius: 10px ;
+	border-radius: 18px ;
 	width: 100px ;
-	height: 50px ;
-	left: ${(props) => props.left} ;
-	opacity: ${(props) => props.opacity} ;
+	height: 38px ;
 	top: 50% ;
-	transform: translateY(-50%);
+	transform: translate(-50px , -50% );
+  left: ${(props) => props.left}px;
+  opacity : ${props => props.opacity};
+  transition:${({ first }) => first ? ".3s ease-out" : "opacity .3s ease-out"}
 `
 
 export const NavbarLinks = styled.div`
 	display: flex ;
+  position: relative;
+  @media (max-width: 680px) {
+    display: none ;
+  }
 `
 export const Link = styled.a`
 	color: white;
-	margin: 0 15px;
+	margin: 0 35px 0 0;
 	cursor: pointer ;
 	position: relative;
+  display: block ;
 `
 
 

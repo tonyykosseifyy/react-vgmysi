@@ -22,8 +22,10 @@
   --White: hsl(0, 0%, 100%);
 }
 .logo {
-  min-width: 300px;
-  min-height: 60px;
+  display: grid;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 5vw ;
 }
 .logo > svg {
 	transform : scale(1.3) ;
