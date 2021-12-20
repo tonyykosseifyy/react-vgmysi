@@ -2,6 +2,47 @@ import styled from "styled-components";
 
 
 
+export const NavbarMobileLinks = styled.div`
+  position: absolute ;
+  top: 120px;
+  width: 90vw ;
+  margin: 0 auto ;
+  background-color: white;
+  height:${props => props.open ? "237px" : "0px"}  ;
+  overflow: hidden ;
+  transition: .3s  cubic-bezier(0.18, 0.89, 0.32, 1.28) ;
+  & > a {
+    color: #99989F ;
+    margin: 30px 0 ;
+    text-align: center;
+    font-size: 18px;
+    transition: .3s ease-out ;
+    position: relative ;
+    z-index: 1;
+  }
+  & > a::before {
+    position: absolute ;
+    z-index: -1 ;
+    width: 200px ;
+    top: 50% ;
+    left: 50% ;
+    transform: translate(-50% , -50%);
+    border-radius: 20px ;
+    height: 40px ;
+    background-color: #FBD601;
+    opacity: 0 ;
+    transition: .3s ease-out ;
+    content: "";
+  }
+  & > a:hover , & > a:focus {
+    color: black ;
+    text-transform: uppercase ;
+    font-family: 'Fraunces', serif;
+  }
+  & > a:hover::before , & > a:focus::before {
+    opacity: 1;
+  }
+`
 
 export const Navbar = styled.nav`
   display: flex ;
@@ -39,6 +80,13 @@ export const Link = styled.a`
   display: block ;
 `
 
+
+export const MobileLink = styled(Link)`
+  transition: ${({ open }) ? ".3s cubic-bezier(0.18, 0.89, 0.38, 1.04)" : "0s"} !important ;
+  opacity: ${({ open }) => open ? "1" : "0"};
+  transform: ${({ open }) => open ? "translateX(0)" : "translateX(-100%)"};
+  transition-delay: .${(props) => props.open ? props.index + 1 : 0 }s !important ;
+`
 
 export const Logo = () => (
   <div className='logo'>

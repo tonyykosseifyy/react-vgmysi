@@ -1,5 +1,5 @@
 import React , { useState } from "react" ;
-import { Navbar , Logo , NavbarLinks , Link , BackgroundBar } from "../styled-components.js" ;
+import { Navbar , Logo , NavbarLinks , Link , BackgroundBar , NavbarMobileLinks , MobileLink} from "../styled-components.js" ;
 import Hamburger from "./Hamburger";
 
 const links = ["About" , "Services" , "Projects" , "Contact"];
@@ -25,6 +25,11 @@ const NavbarWrapper = () => {
   return (
     <Navbar>
       <Logo />
+      <NavbarMobileLinks open={open}>
+        { links.map((item , index) => (
+          <MobileLink index={index} open={open} key={index}>{item}</MobileLink>
+        ))}
+      </NavbarMobileLinks>
       <Hamburger open={open} setOpen={setOpen} />
       <NavbarLinks
         onMouseLeave={() => {
