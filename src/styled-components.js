@@ -1,5 +1,17 @@
 import styled from "styled-components";
 
+export const ArrowDown = styled.div`
+  position: relative ;
+  opacity: ${({ scrolled }) => scrolled ? "0" : "1"} ;
+  transition: .3s ease-out ;
+  & > div {
+    width: 4px ;
+    height: 200px ;
+    background-color: white ;
+  }
+`
+
+
 export const HomeTitle = styled.h1`
   color: white;
   font-size: 3.1rem ;
